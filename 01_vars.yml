@@ -27,7 +27,6 @@
       ansible.builtin.debug:
         var: httpd_status
 
-
     - name: Is httpd running
       ansible.builtin.debug:
         msg: httpd is running
@@ -46,4 +45,3 @@
       ansible.builtin.systemd:
         name: firewalld
         state: reloaded
-
